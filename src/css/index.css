@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: var(--bg-canvas);
+  --color-sidebar: var(--bg-sidebar);
+  --color-card: var(--bg-card);
+  --color-well: var(--bg-well);
+
+  --color-sage-50: #F1F6F3;
+  --color-sage-100: #DFECE6;
+  --color-sage-200: #C3D8CE;
+  --color-sage-600: #4F7263;
+  --color-sage-700: #2F4F42;
+  --color-sage-800: #1E352C;
+
+  --color-ink-900: var(--text-900);
+  --color-ink-600: var(--text-600);
+  --color-ink-400: var(--text-400);
+
+  --color-amber-400: #E6C253;
+  --color-amber-500: #D9B341;
+  --color-amber-100: #FAF0D1;
+  --color-amber-800: #7A5C12;
+
+  --color-line: var(--border-line);
+  --color-line-strong: var(--border-strong);
+
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+:root {
+  --bg-canvas: #F8F8F4;
+  --bg-sidebar: #EFF0EA;
+  --bg-card: #FFFFFF;
+  --bg-well: #F2F3ED;
+  --text-900: #1D2621;
+  --text-600: #59655E;
+  --text-400: #87928C;
+  --border-line: #E3E5DD;
+  --border-strong: #C9CEC2;
+}
+
+.dark {
+  --bg-canvas: #141916;
+  --bg-sidebar: #191F1C;
+  --bg-card: #1F2622;
+  --bg-well: #252E29;
+  --text-900: #F0F3F1;
+  --text-600: #B2BDB6;
+  --text-400: #7E8B83;
+  --border-line: #2E3832;
+  --border-strong: #3E4B43;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-900);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
